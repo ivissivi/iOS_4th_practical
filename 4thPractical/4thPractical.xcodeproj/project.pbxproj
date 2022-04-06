@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		E9F9B93127FDCAA60077A5BE /* _thPracticalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B93027FDCAA60077A5BE /* _thPracticalApp.swift */; };
-		E9F9B93327FDCAA60077A5BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B93227FDCAA60077A5BE /* ContentView.swift */; };
+		E9F9B93327FDCAA60077A5BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B93227FDCAA60077A5BE /* HomeView.swift */; };
 		E9F9B93527FDCAA70077A5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F9B93427FDCAA70077A5BE /* Assets.xcassets */; };
-		E9F9B93827FDCAA70077A5BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F9B93727FDCAA70077A5BE /* Preview Assets.xcassets */; };
+		E9F9B94327FDDE6A0077A5BE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B94227FDDE6A0077A5BE /* HomeViewModel.swift */; };
+		E9F9B94527FDE00B0077A5BE /* GitHubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B94427FDE00B0077A5BE /* GitHubUser.swift */; };
+		E9F9B94727FDE9A30077A5BE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B94627FDE9A30077A5BE /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9F9B92D27FDCAA60077A5BE /* 4thPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4thPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F9B93027FDCAA60077A5BE /* _thPracticalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _thPracticalApp.swift; sourceTree = "<group>"; };
-		E9F9B93227FDCAA60077A5BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E9F9B93227FDCAA60077A5BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E9F9B93427FDCAA70077A5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E9F9B93727FDCAA70077A5BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9F9B94227FDDE6A0077A5BE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E9F9B94427FDE00B0077A5BE /* GitHubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUser.swift; sourceTree = "<group>"; };
+		E9F9B94627FDE9A30077A5BE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +55,46 @@
 		E9F9B92F27FDCAA60077A5BE /* 4thPractical */ = {
 			isa = PBXGroup;
 			children = (
+				E9F9B94027FDDD1C0077A5BE /* Views */,
+				E9F9B94127FDDD230077A5BE /* Models */,
+				E9F9B93F27FDDD160077A5BE /* Services */,
+				E9F9B93E27FDDD0D0077A5BE /* ViewModels */,
 				E9F9B93027FDCAA60077A5BE /* _thPracticalApp.swift */,
-				E9F9B93227FDCAA60077A5BE /* ContentView.swift */,
 				E9F9B93427FDCAA70077A5BE /* Assets.xcassets */,
-				E9F9B93627FDCAA70077A5BE /* Preview Content */,
 			);
 			path = 4thPractical;
 			sourceTree = "<group>";
 		};
-		E9F9B93627FDCAA70077A5BE /* Preview Content */ = {
+		E9F9B93E27FDDD0D0077A5BE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E9F9B93727FDCAA70077A5BE /* Preview Assets.xcassets */,
+				E9F9B94227FDDE6A0077A5BE /* HomeViewModel.swift */,
 			);
-			path = "Preview Content";
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E9F9B93F27FDDD160077A5BE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9F9B94627FDE9A30077A5BE /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E9F9B94027FDDD1C0077A5BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9F9B93227FDCAA60077A5BE /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9F9B94127FDDD230077A5BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9F9B94427FDE00B0077A5BE /* GitHubUser.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +155,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F9B93827FDCAA70077A5BE /* Preview Assets.xcassets in Resources */,
 				E9F9B93527FDCAA70077A5BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F9B93327FDCAA60077A5BE /* ContentView.swift in Sources */,
+				E9F9B93327FDCAA60077A5BE /* HomeView.swift in Sources */,
+				E9F9B94727FDE9A30077A5BE /* UserService.swift in Sources */,
+				E9F9B94527FDE00B0077A5BE /* GitHubUser.swift in Sources */,
+				E9F9B94327FDDE6A0077A5BE /* HomeViewModel.swift in Sources */,
 				E9F9B93127FDCAA60077A5BE /* _thPracticalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +298,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"4thPractical/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -294,7 +326,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"4thPractical/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
