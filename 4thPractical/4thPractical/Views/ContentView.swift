@@ -9,6 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        HStack (alignment: .center){
+            Spacer()
+            Text("Minestagram")
+                .font(.system(size:40))
+                .foregroundColor(Color.white)
+                .fontWeight(.heavy)
+                .frame(maxWidth: .infinity, alignment: .leading);
+        }.background(CustomColor.myColor)
+        Spacer()
         TabView {
             HomeView()
                 .tabItem {

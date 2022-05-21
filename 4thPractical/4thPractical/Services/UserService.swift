@@ -9,6 +9,7 @@ import Foundation
 
 class UserService {
     let kUserUrlString = "https://api.github.com/users/ioslekcijas/repos"
+    let filesStringUrl = "https://api.github.com/repos/ioslekcijas/faili/contents/"
     
     static let shared = UserService()
     
@@ -26,6 +27,21 @@ class UserService {
             guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError( "Error while fetching data")}
             
             return try JSONDecoder().decode(GitHubUser.self, from: data)
+    }
+    
+    @MainActor func getGitHubPictures() async throws -> GitHubPictures? {
+        guard let url = URL(string: "https://api.github.com/repos/ioslekcijas/faili/contents/") else {
+            fatalError("missing url") }
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "GET"
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let (data, response) = try await URLSession.shared.data(for: urlRequest)
+        
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError( "Error while fetching data")}
+        
+        return try JSONDecoder().decode(GitHubPictures.self, from: data)
     }
 }
 

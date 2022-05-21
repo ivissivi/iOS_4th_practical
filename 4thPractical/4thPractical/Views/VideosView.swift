@@ -9,7 +9,18 @@ import SwiftUI
 
 struct VideosView: View {
     var body: some View {
-        Text("Videos, World!")
+        List(0..<20) { item in
+            VStack (alignment: .leading, spacing: 9) {
+                Text("Title")
+                    .fontWeight(.semibold)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.5)
+                
+                Text("Upload date")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+        }
     }
 }
 
