@@ -19,7 +19,7 @@ class HomeViewModel: ObservableObject {
         Task {
             do {
                 user = try await UserService.shared.getGitHubUser()
-                pictures = try await UserService.shared.getGitHubPictures()
+                //pictures = try await UserService.shared.getGitHubPictures()
             } catch {
                 print("download failed")
             }
