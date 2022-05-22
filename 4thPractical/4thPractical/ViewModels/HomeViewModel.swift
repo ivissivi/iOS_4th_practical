@@ -8,8 +8,8 @@
 import Foundation
 
 class HomeViewModel: ObservableObject {
+    
     @Published var user: GitHubUser?
-    @Published var pictures: GitHubPictures?
     
     init(){
         getGitHubUser()
@@ -19,7 +19,6 @@ class HomeViewModel: ObservableObject {
         Task {
             do {
                 user = try await UserService.shared.getGitHubUser()
-                //pictures = try await UserService.shared.getGitHubPictures()
             } catch {
                 print("download failed")
             }

@@ -1,5 +1,5 @@
 //
-//  DownloadManager.swift
+//  DownloadManagerImage.swift
 //  4thPractical
 //
 //  Created by user215333 on 5/22/22.
@@ -10,22 +10,19 @@ import Foundation
 import Foundation
 import AVKit
 
-final class DownloadManager: ObservableObject {
+final class DownloadManagerImage : ObservableObject {
     
     @Published var isDownloading = false
     @Published var isDownloaded = false
-    let downloadLink = "https://raw.githubusercontent.com/ioslekcijas/faili/master/Teddy%20Blueger%20scores%20two%20goals%20against%20Rangers.mp4"
+    let downloadLink = "https://raw.githubusercontent.com/ioslekcijas/faili/master/PolijaTatri-1.jpg"
 
-    
-// MARK: - Download process
-    
     func downloadFile() {
         print("downloadFile")
         isDownloading = true
 
         let docsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
 
-        let destinationUrl = docsUrl?.appendingPathComponent("myVideo.mp4")
+        let destinationUrl = docsUrl?.appendingPathComponent("myImage.jpg")
         if let destinationUrl = destinationUrl {
             if (FileManager().fileExists(atPath: destinationUrl.path)) {
                 print("File already exists")
@@ -67,31 +64,27 @@ final class DownloadManager: ObservableObject {
             }
         }
     }
-    
-// MARK: - Delete process
 
     func deleteFile() {
         let docsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
 
-        let destinationUrl = docsUrl?.appendingPathComponent("myVideo.mp4")
+        let destinationUrl = docsUrl?.appendingPathComponent("myImage.jpg")
         if let destinationUrl = destinationUrl {
             guard FileManager().fileExists(atPath: destinationUrl.path) else { return }
             do {
                 try FileManager().removeItem(atPath: destinationUrl.path)
-                print("File deleted successfully")
+                print("Image deleted successfully")
                 isDownloaded = false
             } catch let error {
-                print("Error while deleting video file: ", error)
+                print("Error while deleting image: ", error)
             }
         }
     }
-    
-// MARK: - Check if file exists process
 
     func checkFileExists() {
         let docsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
 
-        let destinationUrl = docsUrl?.appendingPathComponent("myVideo.mp4")
+        let destinationUrl = docsUrl?.appendingPathComponent("myImage.jpg")
         if let destinationUrl = destinationUrl {
             if (FileManager().fileExists(atPath: destinationUrl.path)) {
                 isDownloaded = true
@@ -102,20 +95,5 @@ final class DownloadManager: ObservableObject {
             isDownloaded = false
         }
     }
-
-    func getVideoFileAsset() -> AVPlayerItem? {
-        let docsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
-
-        let destinationUrl = docsUrl?.appendingPathComponent("myVideo.mp4")
-        if let destinationUrl = destinationUrl {
-            if (FileManager().fileExists(atPath: destinationUrl.path)) {
-                let avAssest = AVAsset(url: destinationUrl)
-                return AVPlayerItem(asset: avAssest)
-            } else {
-                return nil
-            }
-        } else {
-            return nil
-        }
-    }
 }
+

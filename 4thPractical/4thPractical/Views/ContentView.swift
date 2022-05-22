@@ -34,11 +34,6 @@ struct ContentView: View {
                     Image(systemName: "video")
                     Text("Videos")
                 }
-            DownloadButton()
-                .tabItem {
-                    Image(systemName: "button")
-                    Text("Download")
-                }
         }
     }
 }

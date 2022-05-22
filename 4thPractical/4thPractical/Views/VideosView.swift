@@ -14,11 +14,11 @@ struct VideosView: View {
     
     var body: some View {
         
-        VStack(spacing: 40) {
-                   DownloadButton()
+        VStack(spacing: 20) {
+                   DownloadButtonVideo()
 
                    if downloadManager.isDownloaded {
-                       WatchButton()
+                       WatchButtonVideo()
                            .onTapGesture {
                                showVideo = true
                            }
@@ -26,24 +26,12 @@ struct VideosView: View {
                                VideoView()
                            })
                    }
+            Spacer()
                }
                .padding(.horizontal, 20)
                .onAppear {
                    downloadManager.checkFileExists()
                }
-        
-        List(0..<20) { item in
-            VStack (alignment: .leading, spacing: 9) {
-                Text("Title")
-                    .fontWeight(.semibold)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.5)
-                
-                Text("Upload date")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
-        }
     }
 }
 

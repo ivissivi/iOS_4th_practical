@@ -2,7 +2,7 @@
 //  GitHubPictures.swift
 //  4thPractical
 //
-//  Created by user215333 on 5/21/22.
+//  Created by user215333 on 5/22/22.
 //
 
 import Foundation
@@ -13,4 +13,3 @@ struct GitHubPictures: Codable {
     let name: String?
     let path: String?
 }
-

@@ -10,12 +10,14 @@ import SwiftUI
 @main
 struct _thPracticalApp: App {
     
-    var downloadManager = DownloadManager()
+    var downloadManagerVideo = DownloadManager()
+    var downloadManagerImage = DownloadManagerImage()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(downloadManager)
+                .environmentObject(downloadManagerVideo)
+                .environmentObject(downloadManagerImage)
         }
     }
 }

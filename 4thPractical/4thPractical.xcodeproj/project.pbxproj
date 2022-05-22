@@ -10,10 +10,13 @@
 		E9378BE128392E360019171C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9378BE028392E360019171C /* ContentView.swift */; };
 		E9378BE528392E940019171C /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9378BE428392E940019171C /* ImagesView.swift */; };
 		E9378BE728392EB10019171C /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9378BE628392EB10019171C /* VideosView.swift */; };
-		E9378BE928395AE90019171C /* GitHubPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9378BE828395AE90019171C /* GitHubPictures.swift */; };
 		E9378BED28399DF60019171C /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9378BEC28399DF60019171C /* DownloadManager.swift */; };
-		E9DC2E57283A378F0060B8C0 /* DownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC2E56283A378F0060B8C0 /* DownloadButton.swift */; };
-		E9DC2E59283A56650060B8C0 /* WatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC2E58283A56650060B8C0 /* WatchButton.swift */; };
+		E9CD549C283A7F150082D56A /* DownloadButtonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD549B283A7F150082D56A /* DownloadButtonImage.swift */; };
+		E9CD549E283A7FDA0082D56A /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD549D283A7FDA0082D56A /* ImageItem.swift */; };
+		E9CD54A0283A805D0082D56A /* DownloadManagerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD549F283A805D0082D56A /* DownloadManagerImage.swift */; };
+		E9CD54A2283A95BA0082D56A /* GitHubPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD54A1283A95BA0082D56A /* GitHubPictures.swift */; };
+		E9DC2E57283A378F0060B8C0 /* DownloadButtonVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC2E56283A378F0060B8C0 /* DownloadButtonVideo.swift */; };
+		E9DC2E59283A56650060B8C0 /* WatchButtonVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC2E58283A56650060B8C0 /* WatchButtonVideo.swift */; };
 		E9DC2E5B283A56BF0060B8C0 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC2E5A283A56BF0060B8C0 /* VideoView.swift */; };
 		E9F9B93127FDCAA60077A5BE /* _thPracticalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B93027FDCAA60077A5BE /* _thPracticalApp.swift */; };
 		E9F9B93327FDCAA60077A5BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B93227FDCAA60077A5BE /* HomeView.swift */; };
@@ -27,10 +30,13 @@
 		E9378BE028392E360019171C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9378BE428392E940019171C /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
 		E9378BE628392EB10019171C /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
-		E9378BE828395AE90019171C /* GitHubPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubPictures.swift; sourceTree = "<group>"; };
 		E9378BEC28399DF60019171C /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
-		E9DC2E56283A378F0060B8C0 /* DownloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadButton.swift; sourceTree = "<group>"; };
-		E9DC2E58283A56650060B8C0 /* WatchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchButton.swift; sourceTree = "<group>"; };
+		E9CD549B283A7F150082D56A /* DownloadButtonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadButtonImage.swift; sourceTree = "<group>"; };
+		E9CD549D283A7FDA0082D56A /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		E9CD549F283A805D0082D56A /* DownloadManagerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManagerImage.swift; sourceTree = "<group>"; };
+		E9CD54A1283A95BA0082D56A /* GitHubPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubPictures.swift; sourceTree = "<group>"; };
+		E9DC2E56283A378F0060B8C0 /* DownloadButtonVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadButtonVideo.swift; sourceTree = "<group>"; };
+		E9DC2E58283A56650060B8C0 /* WatchButtonVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchButtonVideo.swift; sourceTree = "<group>"; };
 		E9DC2E5A283A56BF0060B8C0 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		E9F9B92D27FDCAA60077A5BE /* 4thPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4thPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F9B93027FDCAA60077A5BE /* _thPracticalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _thPracticalApp.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			children = (
 				E9F9B94627FDE9A30077A5BE /* UserService.swift */,
 				E9378BEC28399DF60019171C /* DownloadManager.swift */,
+				E9CD549F283A805D0082D56A /* DownloadManagerImage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -105,9 +112,11 @@
 				E9378BE028392E360019171C /* ContentView.swift */,
 				E9378BE428392E940019171C /* ImagesView.swift */,
 				E9378BE628392EB10019171C /* VideosView.swift */,
-				E9DC2E56283A378F0060B8C0 /* DownloadButton.swift */,
-				E9DC2E58283A56650060B8C0 /* WatchButton.swift */,
+				E9DC2E56283A378F0060B8C0 /* DownloadButtonVideo.swift */,
+				E9DC2E58283A56650060B8C0 /* WatchButtonVideo.swift */,
 				E9DC2E5A283A56BF0060B8C0 /* VideoView.swift */,
+				E9CD549B283A7F150082D56A /* DownloadButtonImage.swift */,
+				E9CD549D283A7FDA0082D56A /* ImageItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F9B94427FDE00B0077A5BE /* GitHubUser.swift */,
-				E9378BE828395AE90019171C /* GitHubPictures.swift */,
+				E9CD54A1283A95BA0082D56A /* GitHubPictures.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,17 +200,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9378BE728392EB10019171C /* VideosView.swift in Sources */,
+				E9CD54A2283A95BA0082D56A /* GitHubPictures.swift in Sources */,
 				E9378BED28399DF60019171C /* DownloadManager.swift in Sources */,
-				E9378BE928395AE90019171C /* GitHubPictures.swift in Sources */,
 				E9F9B93327FDCAA60077A5BE /* HomeView.swift in Sources */,
 				E9F9B94727FDE9A30077A5BE /* UserService.swift in Sources */,
 				E9378BE128392E360019171C /* ContentView.swift in Sources */,
 				E9378BE528392E940019171C /* ImagesView.swift in Sources */,
+				E9CD549C283A7F150082D56A /* DownloadButtonImage.swift in Sources */,
 				E9F9B94527FDE00B0077A5BE /* GitHubUser.swift in Sources */,
-				E9DC2E57283A378F0060B8C0 /* DownloadButton.swift in Sources */,
+				E9CD54A0283A805D0082D56A /* DownloadManagerImage.swift in Sources */,
+				E9DC2E57283A378F0060B8C0 /* DownloadButtonVideo.swift in Sources */,
 				E9F9B94327FDDE6A0077A5BE /* HomeViewModel.swift in Sources */,
 				E9F9B93127FDCAA60077A5BE /* _thPracticalApp.swift in Sources */,
-				E9DC2E59283A56650060B8C0 /* WatchButton.swift in Sources */,
+				E9DC2E59283A56650060B8C0 /* WatchButtonVideo.swift in Sources */,
+				E9CD549E283A7FDA0082D56A /* ImageItem.swift in Sources */,
 				E9DC2E5B283A56BF0060B8C0 /* VideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
