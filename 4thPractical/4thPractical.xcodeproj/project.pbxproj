@@ -12,6 +12,9 @@
 		E9378BE728392EB10019171C /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9378BE628392EB10019171C /* VideosView.swift */; };
 		E9378BE928395AE90019171C /* GitHubPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9378BE828395AE90019171C /* GitHubPictures.swift */; };
 		E9378BED28399DF60019171C /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9378BEC28399DF60019171C /* DownloadManager.swift */; };
+		E9DC2E57283A378F0060B8C0 /* DownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC2E56283A378F0060B8C0 /* DownloadButton.swift */; };
+		E9DC2E59283A56650060B8C0 /* WatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC2E58283A56650060B8C0 /* WatchButton.swift */; };
+		E9DC2E5B283A56BF0060B8C0 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC2E5A283A56BF0060B8C0 /* VideoView.swift */; };
 		E9F9B93127FDCAA60077A5BE /* _thPracticalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B93027FDCAA60077A5BE /* _thPracticalApp.swift */; };
 		E9F9B93327FDCAA60077A5BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B93227FDCAA60077A5BE /* HomeView.swift */; };
 		E9F9B93527FDCAA70077A5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F9B93427FDCAA70077A5BE /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 		E9378BE628392EB10019171C /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
 		E9378BE828395AE90019171C /* GitHubPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubPictures.swift; sourceTree = "<group>"; };
 		E9378BEC28399DF60019171C /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		E9DC2E56283A378F0060B8C0 /* DownloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadButton.swift; sourceTree = "<group>"; };
+		E9DC2E58283A56650060B8C0 /* WatchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchButton.swift; sourceTree = "<group>"; };
+		E9DC2E5A283A56BF0060B8C0 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		E9F9B92D27FDCAA60077A5BE /* 4thPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4thPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F9B93027FDCAA60077A5BE /* _thPracticalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _thPracticalApp.swift; sourceTree = "<group>"; };
 		E9F9B93227FDCAA60077A5BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 				E9378BE028392E360019171C /* ContentView.swift */,
 				E9378BE428392E940019171C /* ImagesView.swift */,
 				E9378BE628392EB10019171C /* VideosView.swift */,
+				E9DC2E56283A378F0060B8C0 /* DownloadButton.swift */,
+				E9DC2E58283A56650060B8C0 /* WatchButton.swift */,
+				E9DC2E5A283A56BF0060B8C0 /* VideoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,8 +198,11 @@
 				E9378BE128392E360019171C /* ContentView.swift in Sources */,
 				E9378BE528392E940019171C /* ImagesView.swift in Sources */,
 				E9F9B94527FDE00B0077A5BE /* GitHubUser.swift in Sources */,
+				E9DC2E57283A378F0060B8C0 /* DownloadButton.swift in Sources */,
 				E9F9B94327FDDE6A0077A5BE /* HomeViewModel.swift in Sources */,
 				E9F9B93127FDCAA60077A5BE /* _thPracticalApp.swift in Sources */,
+				E9DC2E59283A56650060B8C0 /* WatchButton.swift in Sources */,
+				E9DC2E5B283A56BF0060B8C0 /* VideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,7 +27,7 @@ final class DownloadManager: ObservableObject {
                 print("File already exists")
                 isDownloading = false
             } else {
-                let urlRequest = URLRequest(url: URL(string: "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4")!)
+                let urlRequest = URLRequest(url: URL(string: "https://raw.githubusercontent.com/ioslekcijas/faili/master/Teddy%20Blueger%20scores%20two%20goals%20against%20Rangers.mp4")!)
 
                 let dataTask = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
 

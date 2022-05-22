@@ -8,7 +8,30 @@
 import SwiftUI
 
 struct VideosView: View {
+    
+    @EnvironmentObject var downloadManager: DownloadManager
+    @State private var showVideo = false
+    
     var body: some View {
+        
+        VStack(spacing: 40) {
+                   DownloadButton()
+
+                   if downloadManager.isDownloaded {
+                       WatchButton()
+                           .onTapGesture {
+                               showVideo = true
+                           }
+                           .fullScreenCover(isPresented: $showVideo, content: {
+                               VideoView()
+                           })
+                   }
+               }
+               .padding(.horizontal, 20)
+               .onAppear {
+                   downloadManager.checkFileExists()
+               }
+        
         List(0..<20) { item in
             VStack (alignment: .leading, spacing: 9) {
                 Text("Title")

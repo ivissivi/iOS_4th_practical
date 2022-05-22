@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct _thPracticalApp: App {
+    
+    var downloadManager = DownloadManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(downloadManager)
         }
     }
 }
