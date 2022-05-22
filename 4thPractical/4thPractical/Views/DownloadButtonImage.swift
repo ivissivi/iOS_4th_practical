@@ -18,11 +18,11 @@ struct DownloadButtonImage: View {
               return HStack(spacing: 8) {
                   VStack(alignment: .leading, spacing: 4) {
                       LinearGradient(gradient: Gradient(colors: colors), startPoint: .leading, endPoint: .trailing)
-                          .mask(Text(downloadManager.isDownloaded ? "Downloaded" : "Download").fontWeight(.semibold).textCase(.uppercase).font(.footnote).frame(maxWidth: .infinity, alignment: .leading))
+                          .mask(Text(downloadManager.isDownloaded ? "Showing images" : "Show images").fontWeight(.semibold).textCase(.uppercase).font(.footnote).frame(maxWidth: .infinity, alignment: .leading))
                           .frame(maxHeight: 30)
 
                       VStack(alignment: .leading, spacing: 0) {
-                          Text(downloadManager.isDownloaded ? "Delete downloaded image" : "Watch offline")
+                          Text(downloadManager.isDownloaded ? "" : "View images in a list")
                               .font(.caption2)
                               .foregroundColor(Color.primary)
                               .opacity(0.7)
@@ -35,7 +35,7 @@ struct DownloadButtonImage: View {
                       if downloadManager.isDownloading {
                           ProgressView()
                       } else {
-                          Image(systemName: downloadManager.isDownloaded ? "trash" : "square.and.arrow.down")
+                          Image(systemName: downloadManager.isDownloaded ? "eye" : "eye")
                               .font(.system(size: 15, weight: .bold))
                               .foregroundColor(Color.primary)
                               .opacity(0.7)
